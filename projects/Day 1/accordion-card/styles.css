@@ -127,7 +127,7 @@ body{
     border-bottom: none;
 }
 
-@media only screen and(min-width: 769px){
+@media only screen and(min-width: 426px){
     .image-container img#woman-mobile{
         display: none;
     }
@@ -150,12 +150,12 @@ body{
 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 425px){
     .container{
         flex-direction: column;
         width: 320px;
         max-width: 400px;
-        height: 70vh;
+        height: 80%;
         margin-top: 25px;
     }
 
