@@ -28,11 +28,13 @@
         switcher = !switcher
 
         if(switcher === true){
-            pOne.style.display = "contents"
+            h4One.style.transform = "translateY(0%)"
+            pOne.style.visibility = "visible"
             h4One.style.fontWeight = 700;
             arrowOne.style.transform = "rotate(180deg)";
         }else{
-            pOne.style.display = "none";
+            h4One.style.transform = "translateY(200%)"
+            pOne.style.visibility = "hidden";
             h4One.style.fontWeight = 400;
             arrowOne.style.transform = "rotate(0deg)";
         }
@@ -44,11 +46,13 @@
         switcher = !switcher
 
         if(switcher === true){
-            pTwo.style.display = "contents"
+            h4Two.style.transform = "translateY(0%)"
+            pTwo.style.visibility = "visible"
             h4Two.style.fontWeight = 700;
             arrowTwo.style.transform = "rotate(180deg)";
         }else{
-            pTwo.style.display = "none";
+            h4Two.style.transform = "translateY(200%)"
+            pTwo.style.visibility = "hidden";
             h4Two.style.fontWeight = 400;
             arrowTwo.style.transform = "rotate(0deg)";
         }
@@ -60,11 +64,13 @@
         switcher = !switcher
 
         if(switcher === true){
-            pThree.style.display = "contents"
+            h4Three.style.transform = "translateY(0%)"
+            pThree.style.visibility = "visible"
             h4Three.style.fontWeight = 700;
             arrowThree.style.transform = "rotate(180deg)";
         }else{
-            pThree.style.display = "none";
+            h4Three.style.transform = "translateY(200%)"
+            pThree.style.visibility = "hidden";
             h4Three.style.fontWeight = 400;
             arrowThree.style.transform = "rotate(0deg)";
         }
@@ -76,11 +82,13 @@
         switcher = !switcher
 
         if(switcher === true){
-            pFour.style.display = "contents"
+            h4Four.style.transform = "translateY(0%)"
+            pFour.style.visibility = "visible"
             h4Four.style.fontWeight = 700;
             arrowFour.style.transform = "rotate(180deg)";
         }else{
-            pFour.style.display = "none";
+            h4Four.style.transform = "translateY(200%)"
+            pFour.style.visibility = "hidden";
             h4Four.style.fontWeight = 400;
             arrowFour.style.transform = "rotate(0deg)";
         }
@@ -92,11 +100,13 @@
         switcher = !switcher
 
         if(switcher === true){
-            pFive.style.display = "contents";
+            h4Five.style.transform = "translateY(0%)"
+            pFive.style.visibility = "visible";
             h4Five.style.fontWeight = 700;
             arrowFive.style.transform = "rotate(180deg)";
         }else{
-            pFive.style.display = "none";
+            h4Five.style.transform = "translateY(200%)"
+            pFive.style.visibility = "hidden";
             h4Five.style.fontWeight = 400;
             arrowFive.style.transform = "rotate(0deg)";
         }

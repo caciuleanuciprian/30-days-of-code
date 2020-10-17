@@ -29,7 +29,7 @@ body{
 .container{
     display: flex;
     flex-direction: row;
-    height: 70vh;
+    height: 75vh;
     background-color: white;
     max-width: 900px;
     margin: 0 auto;
@@ -79,7 +79,7 @@ body{
     color: var(--faq-title);
     font-weight: 700;
     font-size: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .faq-container h4{
@@ -88,8 +88,10 @@ body{
     font-size: 12px;
     padding: 5px 0px 5px 0px;
     margin: 15px 0px;
+    transform: translateY(200%);
     transition: all 0.3s ease;
-
+    background-color: white;
+    z-index: 999;
 }
 
 .faq-container h4:hover{
@@ -101,18 +103,17 @@ body{
 
 .faq-container h4 img{
     float: right;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 
 }
 
 .faq-container p{
-    transition: all 0.5s ease;
+    position: relative;
+    transition: 0.15s ease-in;
     color: var(--p-color);
     font-weight: 400;
     font-size: 12px;
-    padding: 5px 0px 5px 0px;
-    display: none;
-    
+    visibility: hidden;    
 
 }
 
@@ -124,4 +125,90 @@ body{
     border-right: none;
     border-left: none;
     border-bottom: none;
+}
+
+@media only screen and(min-width: 769px){
+    .image-container img#woman-mobile{
+        display: none;
+    }
+
+    .image-container img#pattern-mobile{
+        display: none;
+    }
+
+    .image-container img#box{
+        display: contents;
+    }
+
+    .image-container img#pattern{
+        display: contents;
+    }
+
+    .image-container img#woman{
+        display: contents;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+        width: 320px;
+        max-width: 400px;
+        height: 70vh;
+        margin-top: 25px;
+    }
+
+    .image-container{
+        padding-bottom: 10px;
+    }
+
+    .faq-container{
+        margin: 0px 10px;
+        height: 100%;
+    }
+
+    .image-container img#box{
+        display: none;
+    }
+
+    .image-container img#pattern{
+        display: none;
+    }
+
+    .image-container img#woman{
+        display: none;
+    }
+
+    .image-container img#woman-mobile{
+        position: absolute;
+        transform: translate(-13%,-56%);
+    }
+
+    .image-container img#pattern-mobile{
+        transform: translate(-2%, -15%);
+    }
+
+    .faq-container h1{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .faq-container h4{
+        margin: 5px 0px;
+        padding: 0px 15px;
+    }
+
+    .faq-container p{
+        padding: 5px 15px;
+    }
+
+    .faq-container hr{
+        margin: 0px 15px 5px 15px;
+    }
+
+    .faq-container{
+        margin-bottom: 30px;
+    }    
+
 }
